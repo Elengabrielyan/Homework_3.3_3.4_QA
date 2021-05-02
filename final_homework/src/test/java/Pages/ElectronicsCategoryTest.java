@@ -10,5 +10,6 @@ public class ElectronicsCategoryTest  extends BaseTests {
     @Test
     public void anun() {
         ElectronicsCategory page = home.choose_el_category();
+
     }
 }

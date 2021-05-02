@@ -11,7 +11,7 @@ public class BasePage {
         this.driver = driver;
     }
 
-    public WebElement findElementBy(By by ){
+    protected WebElement findElementBy(By by ){
         if(by == null){
             throw new IllegalArgumentException("'By' cannot be null!");
         }

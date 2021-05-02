@@ -10,7 +10,7 @@ public class ElectronicsCategory extends BasePage{
 
     public static final String ELECTRONIC_PAGE_URL = "https://www.list.am/category/4";
 
-    private By phone_category_button = By.cssSelector("a[href $= \"y/11\"]") ;
+    private By electronic_category_button = By.cssSelector("a[href $= \"y/11\"]") ;
 
 
 
