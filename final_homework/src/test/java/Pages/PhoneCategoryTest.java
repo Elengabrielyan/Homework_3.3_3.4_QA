@@ -25,11 +25,21 @@ public class PhoneCategoryTest extends BaseTests {
     assertTrue(isChecked);
 }
 @Test
+public void radioButton_Want() {
+    PhoneCategory choose_category_page = home.choose_phone_category();
+    choose_category_page.radioButton_Want();
+    boolean isChecked =  choose_category_page.findElementBy(By.id("idtype2")).isSelected();
+    assertTrue(isChecked);
+
+
+}
+@Test
     public void radio_button(){
         PhoneCategory choose_category_page = home.choose_phone_category();
         choose_category_page.radio_button();
         boolean isChecked = choose_category_page.findElementBy(By.id("idcmtype0")).isSelected();
         assertTrue(isChecked);
+
     }
 
 
