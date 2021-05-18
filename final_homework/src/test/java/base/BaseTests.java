@@ -12,7 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import Pages.Home;
+import Pages.Category;
 import utils.EventReporter;
 import utils.WindowManager;
 
@@ -24,7 +24,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 public class BaseTests {
 
     private EventFiringWebDriver driver;
-    protected Home home;
+    protected Category home;
 
     @BeforeClass
     public void setUp(){
@@ -38,7 +38,7 @@ public class BaseTests {
     @BeforeMethod
     public void goHome(){
         driver.get("https://www.list.am/en/");
-        home = new Home(driver);
+        home = new Category(driver);
     }
 
     @AfterClass
